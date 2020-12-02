@@ -1,11 +1,11 @@
 with open("input.txt", "r") as f:
     data = f.readlines()
 
-data = list(map(lambda x : int(x), data))
+data = list(map(lambda x: int(x), data))
 data.sort()
 TARGET = 2020
 
-for idx,curVal in enumerate(data):
+for idx, curVal in enumerate(data):
     left = idx
     right = len(data) - 1
     while(data[left] + data[right] + curVal != TARGET and left < right):

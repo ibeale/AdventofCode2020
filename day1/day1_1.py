@@ -1,7 +1,7 @@
 with open("input.txt", "r") as f:
     data = f.readlines()
 
-data = list(map(lambda x : int(x), data))
+data = list(map(lambda x: int(x), data))
 data.sort()
 TARGET = 2020
 
@@ -18,4 +18,3 @@ if(data[left] + data[right] == TARGET):
     print(data[left] * data[right])
 else:
     print("No solution found")
-
