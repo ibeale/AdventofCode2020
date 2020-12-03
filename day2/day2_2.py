@@ -1,8 +1,5 @@
-with open("input.txt", "r") as f:
-    data = f.readlines()
-
 numberValid = 0
-for line in data:
+for line in open("input.txt", "r").readlines():
     limits, letter, password = line.split(" ")
     letter = letter[0]
     minLim, maxLim = list(map(lambda x : int(x), limits.split("-")))
